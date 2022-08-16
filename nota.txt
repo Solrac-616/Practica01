@@ -1,1 +1,22 @@
 primer archivo
+
+<div class="section section-01 banner">
+            <div class="row">
+                <h1>TITULO H1</h1>
+            </div>
+        </div>
+        <div class="section section-02">
+            <div class="row">
+                <h2>Titulo-h2</h2>
+            </div>
+        </div>
+        <div class="section section-03">
+            <div class="row">
+                <h2>Titulo-h2</h2>
+            </div>
+        </div>
+        <div class="section section-04">
+            <div class="row">
+                <h2>Titulo-h2</h2>
+            </div>
+        </div>

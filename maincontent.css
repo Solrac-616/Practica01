@@ -1,0 +1,253 @@
+.primary-section
+{
+    min-height: 70vh;
+    border: 1px solid rgb(255, 0, 0); 
+}
+
+.banner
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+.banner .row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.banner .description
+{
+    max-width: 50%;
+    text-align: center;
+}
+
+.banner button
+{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #0e32e9;
+    font-weight: 700;
+}
+
+.row
+{
+    min-height: 150px;
+    padding: 25px 0px;
+    margin: auto;
+    width: 90%;
+    max-width: 1080px;
+    border-radius: 20px;
+    background-color: rgba(221, 221, 221, 0.683);
+}
+
+/*------------------------------------------------Info*/
+
+.info .row
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: auto;
+
+}
+
+.col-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    min-height: 100%;
+    border-right: 1px solid #000;
+}
+
+.col-rigth
+{
+    width: 50%;
+    min-height: 100%;
+    border-left: 1px solid #000;
+}
+
+.info .info-img
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: rgb(44, 229, 53);
+    margin-bottom: 20px;
+}
+
+.info .accordion
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info .accordion .accordion-item
+{
+    position: relative;
+    
+    background-color: rgb(23, 182, 23);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.info .accordion-item-header
+{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info .accordion-item-header::after
+{
+    content: '\002B';
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.info .accordion-item-header.active::after
+{
+    content: '\2212';
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+
+/*----------------------------------------------------Services*/
+
+.services
+{
+    display: flex;
+    align-items: center;
+}
+
+.services .row .title
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services .cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services .card
+{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.services .card .card-img
+{
+    width: 100%;
+    height: 170px;
+    background-color: rgb(44, 229, 53);
+    border-radius: 10px 10px 0 0;
+}
+
+.services .card-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.services .pagination
+{
+    margin-top: 30px;
+    background-color: rgb(0, 187, 255);
+    text-align: center;
+}
+
+.services .pagination-bar
+{
+    border-radius: 10px;
+    background-color: #0ee912;
+    padding: 10px;
+}
+
+.services .pagination a
+{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.services .pagination a,
+.services .pagination .pagination-bar span
+{
+    padding: 5px;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px)
+{
+    
+}
+
+
+/*-------------------------------------------------CONTACT*/
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contact .row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact .form-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact .form-container input,
+.contact .form-container textarea
+{
+    padding: 10px 15px;
+}
+
+.contact .form-container textarea
+{
+    resize: none;
+}
