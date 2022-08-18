@@ -263,12 +263,16 @@
     .cards
     {
         flex-direction: column;
+        gap: 10px;
     }
 
     .card
     {
         display: flex;
         width: 100% !important;
+        height: 180px;
+        align-items: center;
+        padding-bottom: 0px !important;
     }
 
     .card-img
