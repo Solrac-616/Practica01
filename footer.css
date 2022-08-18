@@ -90,3 +90,47 @@ footer
     cursor: pointer;
     user-select: none;
 }
+
+.copy-socials i
+{
+    margin-left: 20px;
+    opacity: 0;
+}
+
+@media screen and (max-width: 960px)
+{
+    .footer-col:nth-child(3)
+    {
+        display: none;
+    }
+
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(2)
+    {
+        width: 50%;
+    }
+
+    .footer-col:nth-child(2)
+    {
+        border-image: linear-gradient(to top, transparent, #ffffff, transparent) 0;
+    }
+
+    .copy-socials i
+    {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 858px)
+{
+    footer h2
+    {
+        font-size: 15px;
+    }
+
+    footer h3,
+    footer p
+    {
+        font-size: 13px;
+    }
+}
