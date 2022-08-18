@@ -124,17 +124,19 @@
     content: '\2212';
 }
 
-.accordion-item-body {
+.accordion-item-body
+{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .accordion-item-body-content {
+}
+  .accordion-item-body-content
+{
     padding: 1rem;
     line-height: 1.5rem;
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-  }
+}
 
 /*----------------------------------------------------Services*/
 
@@ -153,7 +155,6 @@
 .services .cards
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -211,12 +212,6 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 960px)
-{
-    
-}
-
-
 /*-------------------------------------------------CONTACT*/
 
 .contact
@@ -250,4 +245,41 @@
 .contact .form-container textarea
 {
     resize: none;
+}
+
+@media screen and (max-width: 960px)
+{
+    .info .row
+    {
+        flex-direction: column;
+    }
+
+    .info .col-left,
+    .info .col-rigth
+    {
+        width: 100%;
+    }
+
+    .cards
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        display: flex;
+        width: 100% !important;
+    }
+
+    .card-img
+    {
+        width: 40% !important;
+        height: 100% !important;
+        border-radius: 10px !important;
+    }
+
+    .card-content
+    {
+        width: 60% !important;
+    }
 }
